@@ -1,0 +1,25 @@
+PHISHING INCIDENT TIMELINE
+==========================
+
+2026-08-17 09:14:22 +0300
+- Phishing email received by employee@nexacorp.local.
+- Sender displayed as Microsoft 365 Security.
+- Sender domain: micros0ft365-security.com.
+- Email contained a suspicious Microsoft 365 verification URL.
+
+2026-08-17 09:14:22 +0300
+- Email authentication results:
+  SPF: FAIL
+  DKIM: NONE
+  DMARC: FAIL
+
+Investigation
+- URL analyzed without accessing the destination.
+- Domain: login-microsoft365-security.com
+- WHOIS: No match found.
+- DNS: NXDOMAIN.
+- VirusTotal: No malicious detections observed.
+
+Current Assessment
+- Multiple indicators are consistent with a phishing attempt.
+- No evidence currently confirms successful credential theft or compromise.

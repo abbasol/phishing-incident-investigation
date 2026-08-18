@@ -1,0 +1,26 @@
+From: Microsoft 365 Security <security@micros0ft365-security.com>
+To: employee@nexacorp.local
+Subject: Urgent: Your Microsoft 365 account requires verification
+Date: Mon, 17 Aug 2026 09:14:22 +0300
+Reply-To: security@micros0ft365-security.com
+
+Dear User,
+
+Your Microsoft 365 account requires immediate verification.
+
+Please verify your account to avoid temporary suspension:
+
+https://login-microsoft365-security.com/verify
+
+Failure to complete verification within 24 hours may result in restricted access.
+
+Microsoft 365 Security Team
+
+Received: from mail.micros0ft365-security.com (203.0.113.45)
+    by mail.nexacorp.local with ESMTPS;
+    Mon, 17 Aug 2026 09:14:22 +0300
+
+Authentication-Results: mail.nexacorp.local;
+    spf=fail smtp.mailfrom=micros0ft365-security.com;
+    dkim=none;
+    dmarc=fail header.from=micros0ft365-security.com

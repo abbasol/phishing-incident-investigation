@@ -1,0 +1,17 @@
+IOC LIST
+========
+
+Malicious/Suspicious Domains:
+1. micros0ft365-security.com
+2. mail.micros0ft365-security.com
+3. login-microsoft365-security.com
+
+Suspicious URL:
+https://login-microsoft365-security.com/verify
+
+Source IP:
+203.0.113.45
+
+Internal/Benign Infrastructure:
+nexacorp.local
+mail.nexacorp.local

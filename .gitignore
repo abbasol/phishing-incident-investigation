@@ -1,0 +1,17 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor / temporary files
+*.swp
+*.tmp
+*~
+
+# Secrets and credentials
+.env
+.env.*
+*.key
+*.pem
+credentials.txt
+passwords.txt
+secrets.txt

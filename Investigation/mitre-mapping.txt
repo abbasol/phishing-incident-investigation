@@ -1,0 +1,20 @@
+MITRE ATT&CK MAPPING
+====================
+
+Technique:
+T1566.002 — Phishing: Spearphishing Link
+
+Evidence:
+- Phishing email containing a suspicious verification URL.
+- URL attempts to imitate a Microsoft 365 account verification workflow.
+- Sender domain is a Microsoft lookalike domain.
+- SPF and DMARC authentication failed.
+
+Assessment:
+The available evidence is consistent with the use of a phishing link to direct the victim toward a credential-harvesting or fraudulent authentication page.
+
+Confidence:
+High
+
+Limitation:
+No evidence currently confirms that credentials were successfully submitted or stolen.

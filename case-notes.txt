@@ -1,0 +1,110 @@
+Incident: Suspected Microsoft 365 Phishing
+
+Reported URL:
+https://login-microsoft365-security.com/verify
+
+Initial observation:
+The URL claims to be related to Microsoft 365 account verification.
+Finding 01 — WHOIS Analysis
+
+Domain:
+login-microsoft365-security.com
+
+Result:
+No match found in the .com WHOIS registry.
+
+Initial assessment:
+The domain does not appear to be registered in the WHOIS registry at the time of investigation.
+
+Note:
+WHOIS status alone is not sufficient to classify the URL as malicious. Additional DNS and threat-intelligence analysis is required.
+
+Finding 02 — DNS Analysis
+
+Domain:
+login-microsoft365-security.com
+
+Query:
+A record
+
+Result:
+NXDOMAIN
+
+Interpretation:
+The DNS query returned NXDOMAIN, indicating that the domain does not currently resolve to an IPv4 address through the queried DNS infrastructure.
+
+Assessment:
+The DNS result is consistent with the WHOIS finding that no registration was found. Further investigation is required before reaching a final verdict.
+
+Finding 03 — Threat Intelligence Analysis
+
+Indicator:
+login-microsoft365-security.com
+
+Source:
+VirusTotal
+
+Result:
+No malicious detections were identified for the queried domain.
+
+Assessment:
+No current malicious reputation was observed. However, the domain was also found to be unregistered/non-resolving during WHOIS and DNS analysis.
+
+Conclusion:
+VirusTotal results alone are insufficient to classify the phishing email as benign. Further email and header analysis is required.
+
+Finding 04 — URL Structure Analysis
+
+URL:
+https://login-microsoft365-security.com/verify
+
+Scheme:
+HTTPS
+
+Domain:
+login-microsoft365-security.com
+
+Path:
+/verify
+
+Assessment:
+The URL uses HTTPS, but the domain does not belong to the official microsoft.com domain. The "/verify" path is consistent with an account verification theme commonly observed in phishing scenarios.
+
+Note:
+HTTPS does not indicate that a website is legitimate. Additional evidence is required for final classification.
+
+Finding 05 — Email Authentication Analysis
+
+Observed Results:
+SPF: FAIL
+DKIM: NONE
+DMARC: FAIL
+
+Sender Domain:
+micros0ft365-security.com
+
+Source IP:
+203.0.113.45
+
+Assessment:
+The email failed SPF and DMARC authentication checks and did not contain a valid DKIM signature. The sender domain also uses a lookalike representation of "Microsoft" by replacing the letter "o" with the digit "0".
+
+These indicators collectively increase the likelihood that the email is a phishing attempt.
+
+Confidence:
+High
+
+Finding 06 — IOC DNS Correlation
+
+The identified suspicious domains did not return A records through the DNS resolver used during the investigation.
+
+Domains tested:
+- micros0ft365-security.com
+- mail.micros0ft365-security.com
+- login-microsoft365-security.com
+
+Assessment:
+No active IPv4 resolution was observed for the tested domains at the time of analysis.
+
+Note:
+The absence of DNS resolution does not by itself prove that an indicator is benign or malicious.
